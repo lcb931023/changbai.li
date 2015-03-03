@@ -10,3 +10,9 @@ body
   +font-smoothing // <- _mixins.scss
   // +translateZ(0) // <- Compass. commented out because z-index wont work
   font-family: $lato
+
+// link neutralization
+a
+  text-decoration: none
+a:link, a:hover, a:visited, a:active
+  color: currentcolor
