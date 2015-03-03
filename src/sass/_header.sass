@@ -3,35 +3,43 @@
   position: absolute
   bottom: 20%
   left: 72px
+  font-size: 90px
   *
     color: white
+  @media only screen and (min-device-width : 320px) and (max-device-width : 580px)
+    left: 30px
+    bottom: 10%
+    font-size: 60px
 
   .title
     font-weight: $bold
     position: relative
-    font-size: 90px
+    font-size: 1em
     line-height: 90px
     //width: 100% Cause Overflow bug at lower resolutions
+    @media only screen and (min-device-width : 320px) and (max-device-width : 580px)
+      font-size: 60px
 
     //Underline
     &:after
       content: ''
       position: absolute
-      display: block
+      display:  block
       overflow: hidden
-      left: 0
+      left: 0.03em
       bottom: -0.1em
-      width: 43px
+      width: 0.7em
       height: 4px
       background-color: #fff
 
   .subtitle
-    margin-top: 1.4em
-    font-size: 20px
+    margin-top: 2em
+    font-size: 0.2em
 
   .button-3d
     $btnH: 3em
-    margin-top: 3em
+    margin-top: 2em
+    font-size: 0.18em
     cursor: pointer
     transition: all 0.85s cubic-bezier(.17,.67,.14,.93)
     transform-style: preserve-3d

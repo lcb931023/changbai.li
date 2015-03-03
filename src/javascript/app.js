@@ -36,8 +36,10 @@ $(document).ready(function() {
   // Ignite hash scrolls
   $(document).on("click", ".scroll-to", function handleScrollToClick(event) {
     var targetID = $(event.currentTarget).attr('href');
+    // get offset if there's one
+    var scrollOffset = this.dataset.scrollOffset ? parseInt( this.dataset.scrollOffset ) : 0;
     $("html, body").animate({
-      scrollTop: $(targetID).offset().top
+      scrollTop: ( $(targetID).offset().top + scrollOffset )
     }, "slow");
   });
   // Ignite project grid clicks
