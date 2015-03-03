@@ -43,12 +43,12 @@ $(document).ready(function() {
     }, "slow");
   });
   // Ignite project grid clicks
-  $(document).on("click", ".project", function handleProjectClick(event) {
-    var hash = $(event.currentTarget).attr('data-hash');
-    Backbone.history.navigate(hash, {
-      trigger: true
-    });
-  });
+  // $(document).on("click", ".project", function handleProjectClick(event) {
+  //   var hash = $(event.currentTarget).attr('data-hash');
+  //   Backbone.history.navigate(hash, {
+  //     trigger: true
+  //   });
+  // });
 
   var EVI = new EventEmitter2();
   ArrowNav.init(EVI);
