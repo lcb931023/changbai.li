@@ -51,7 +51,7 @@ $(document).ready(function() {
   // });
 
   var EVI = new EventEmitter2();
-  ArrowNav.init(EVI);
+  //ArrowNav.init(EVI);
   new ApplicationRouter($('#content-wrapper'), EVI);
   Backbone.history.start({
     pushState: true
